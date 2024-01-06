@@ -12,10 +12,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor // constructor, that the below as a private field as arguments.
 @NoArgsConstructor // constructor that takes NO params.
 
-public class Reviews {
+public class Review {
     @Id
     private ObjectId id;
     private String body;
 
 
+    public Review(String body) {
+        this.body = body;
+    }
 }
