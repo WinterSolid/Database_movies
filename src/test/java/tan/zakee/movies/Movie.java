@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
 import java.util.List;
 /* EndPoints in MongoDB:
- * _id
+ * id -  Unique identifier.
  * imdbId
  * title
  * releaseDate
@@ -27,7 +27,7 @@ import java.util.List;
 
 public class Movie {
     @Id
-    private ObjectId id;// Will be the unique identifier.
+    private ObjectId id;
     private String imdbId;
     private String title;
     private String releaseDate;
@@ -37,6 +37,4 @@ public class Movie {
     private List<String> backdrops;
     @DocumentReference // will store ids but data will be stored in separate collection.
     private List<Reviews> reviewId;
-
-
 }
