@@ -51,6 +51,11 @@
 			<artifactId>spring-dotenv</artifactId>
 			<version>4.0.0</version>
 		</dependency>
+		<dependency>
+			<groupId>tan.zakee</groupId>
+			<artifactId>movies</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>
