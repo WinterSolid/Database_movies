@@ -1,7 +1,12 @@
 package tan.zakee.movies;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.bson.types.ObjectId;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
 import java.util.List;
 /* EndPoints in MongoDB:
@@ -15,10 +20,14 @@ import java.util.List;
  * backdrops
  */
 
-// Let FrameWK know that this will represent each document collection class.
-@Document(collation = "movies")
+@Document(collation = "movies") //this will represent each document collection class.
+@Data //@Data: Takes care of all get set and toString methods
+@AllArgsConstructor // constructor, that the below as a private field as arguments.
+@NoArgsConstructor // constructor that takes NO params.
+
 public class Movie {
-    private ObjectId id;
+    @Id
+    private ObjectId id;// Will be the unique identifier.
     private String imdbId;
     private String title;
     private String releaseDate;
@@ -26,6 +35,8 @@ public class Movie {
     private String poster;
     private List<String> genres;
     private List<String> backdrops;
+    @DocumentReference // will store ids but data will be stored in separate collection.
+    private List<Reviews> reviewId;
 
 
 }
