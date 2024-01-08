@@ -17,4 +17,4 @@ Welcome to the Movie Database! This application allows you to explore a vast col
 1. Clone the repository to your local machine.
 
 ```bash
-git clone https://github.com/your-username/movie-database.git
+git clone https://github.com/your-username/database_movies.git
