@@ -9,16 +9,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
 import java.util.List;
-/* EndPoints in MongoDB:
- * id -  Unique identifier.
- * imdbId
- * title
- * releaseDate
- * trailerLink
- * genres
- * poster
- * backdrops
- */
 
 @Document(collation = "movies") //this will represent each document collection class.
 @Data //@Data: Takes care of all get set and toString methods
