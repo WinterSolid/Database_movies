@@ -1,10 +1,13 @@
-package tan.zakee.movies;
+package tan.zakee.movies.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
+import tan.zakee.movies.Movie;
+import tan.zakee.movies.Review;
+import tan.zakee.movies.repositoryInterfaces.ReviewRepository;
 
 @Service
 public class ReviewService {

@@ -1,7 +1,10 @@
-package tan.zakee.movies;
+package tan.zakee.movies.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import tan.zakee.movies.Movie;
+import tan.zakee.movies.repositoryInterfaces.MovieRepository;
+
 import java.util.List;
 import java.util.Optional;
 

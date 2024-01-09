@@ -1,10 +1,13 @@
-package tan.zakee.movies;
+package tan.zakee.movies.serviceTest;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import tan.zakee.movies.Movie;
+import tan.zakee.movies.repositoryInterfaces.MovieRepository;
+import tan.zakee.movies.services.MovieService;
 
 import java.util.Arrays;
 import java.util.List;
