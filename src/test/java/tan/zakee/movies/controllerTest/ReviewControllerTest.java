@@ -1,4 +1,4 @@
-package tan.zakee.movies;
+package tan.zakee.movies.controllerTest;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -7,6 +7,9 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import tan.zakee.movies.Review;
+import tan.zakee.movies.controller.ReviewController;
+import tan.zakee.movies.services.ReviewService;
 
 import java.util.HashMap;
 import java.util.Map;

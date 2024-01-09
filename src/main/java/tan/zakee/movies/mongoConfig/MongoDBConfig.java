@@ -1,4 +1,4 @@
-package tan.zakee.movies;
+package tan.zakee.movies.mongoConfig;
 
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;

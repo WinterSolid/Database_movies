@@ -1,4 +1,4 @@
-package tan.zakee.movies;
+package tan.zakee.movies.serviceTest;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
